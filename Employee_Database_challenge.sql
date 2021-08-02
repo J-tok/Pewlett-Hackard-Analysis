@@ -35,7 +35,7 @@ SELECT DISTINCT ON (e.emp_no) e.emp_no,
 		de.from_date,
 		de.to_date,
 		t.title
- 		INTO mentor_elg
+--  		INTO mentor_elg
 FROM employees as e
 		INNER JOIN titles as t
 		ON (e.emp_no = t.emp_no)
@@ -43,3 +43,11 @@ FROM employees as e
 		ON (e.emp_no = de.emp_no)
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31' AND t.to_date = ('9999-01-01'))
 ORDER BY emp_no;
+
+SELECT * FROM retiring_titles
+ORDER BY title;
+
+SELECT COUNT(emp_no), title
+FROM mentor_elg
+GROUP BY title
+ORDER BY title;
