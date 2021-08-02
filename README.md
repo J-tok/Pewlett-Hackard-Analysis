@@ -12,10 +12,10 @@ Analyzing Pewlett-Hackard's human resources data for a large company for retirin
 
 ## Results
 * 3 tables were created by the original 6 tables loaded with the csv data provided
-  * **Current** Employees born between 1/1/1952 and 12/31/1955 (does not contain the same hire date requirement as in the modules)
+  * Current Employees born between 1/1/1952 and 12/31/1955 (does not contain the same hire date requirement as in the modules)
   * Number of each title retiring
   * Number of current employees with each title (all employees, not just those retiring)
-  * **Current** Employees born in 1965 for the mentorship program. Current Employees are referenced by to_date = '9999-01-01'
+  * Current Employees born in 1965 for the mentorship program. Current Employees are referenced by to_date = '9999-01-01'
 ## Summary
 
 ### How many roles will need to be filled as the "silver tsunami" begins to make an impact?
